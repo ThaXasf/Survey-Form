@@ -1,0 +1,92 @@
+
+<h1 id="title" class="text-center">Firework Survey :)</h1>
+<p id="description" class="description text-center">
+Feel free to be open, honest, and yourself
+</p>
+<p id="description" class="description text-center">Thank you for your time!
+</p>
+
+
+<form id="survey-form">
+<!--Name-->
+<div class="name">
+<label id="name-label" for="name">Name</label>
+<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+</div>
+
+<!--email-->
+<div class="email">
+<label id="email-label" for="email">E-mail</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+</div>
+
+<!--age-->
+<div class="age">
+<label id="number-label" for="number">Age<span class="clue"> (Totally Optional)</span></label>
+<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+</div>
+
+<!--relate-->
+<div class="relationship">
+<p>Which option best describes your current relationship with fireworks?</p>
+<select id="dropdown" name="relationship" class="form-control" required="">
+<option disabled="" selected="" value="">Select current relationship</option>
+<option value="Amazed">Amazed</option>
+<option value="Scared">Scared</option>
+<option value="Non-Chanlant">Non-Chanlant</option>
+<option value="Annoyed">Annoyed</option>
+<option value="Other">Other</option>
+</select>
+</div>
+
+<!--recommendation-->
+<div class="rec">
+<p>Would you recommend seeing fireworks to a friend?</p>
+<label>
+<input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+<label>
+<input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+<label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+<label><input name="user-recommend" value="nah" type="radio" class="input-radio">NO WAY JOSE!</label>
+</div>
+
+<!--fav feature-->
+<div class="fav_feat">
+<p>
+What is your favorite part of fireworks?
+</p>
+<select id="most-like" name="mostLike" class="form-control" required="">
+<option disabled="" selected="" value="">Select an option</option>
+<option value="boom">The BOOM</option>
+<option value="pow">The POW</option>
+<option value="nothing">nothing</option>
+<option value="What">WhAt WeRe We EvEn TaLkInG aBoUt?</option>
+</select>
+</div>
+
+<!--improve suggest-->
+<div class="improve">
+<p>
+What would you like to see improved?
+<span class="clue">(Check ALL that apply)</span>
+</p>
+<label><input name="prefer" value="More-Quiet" type="checkbox" class="input-checkbox">quieter fireworks</label>
+<label><input name="prefer" value="Loud" type="checkbox" class="input-checkbox">NEEDS to be louder</label>
+<label><input name="prefer" value="More-Show" type="checkbox" class="input-checkbox">More pizazz</label>
+<label><input name="prefer" value="Less-Show" type="checkbox" class="input-checkbox">Less show more NOISE!</label>
+</div>
+
+<!--last remarks-->
+<div class="wrap_up">
+<p>Any comments or suggestions?.....Concerns? (all related to the topic, no personal ones..sorry :( ..I'll send a virtual hug)</p>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+</div>
+
+<!--submit-->
+<div class="submit">
+<button type="submit" id="submit" class="submit-button">
+Submit
+</button>
+</div>
+
+</form>
